@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Academico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div>
+            <h2 class="logo">LE DIEL</h2>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#api">Integrações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Apresentação -->
+    <section id="inicio" class="inicio">
+        <div class="caixa-apresentacao">
+            <h1>Seja Bem-Vindo!</h1>
+            <p>Me chamo <strong>Letyeri</strong>, sou formando em Engenharia Civil e iniciante em Análise e Desenvolvimento de Sistemas.</p>
+            <p>Esta é a minha landing page de apresentação.</p>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="secao">
+        <h2>Portifólio Acadêmico</h2>
+        <div class="grupo-caixas">
+
+            <div class="caixa">
+                <h3>SOBRE MIM</h3>
+                <p>Atualmente sou estudante de Análise e Desenvolvimento de Sistemas na Faculdade Fasipe, no primeiro semestre e formando em Engenharia Civil pela Unemat.</p>
+            </div>
+
+            <div class="caixa">
+                <h3>CURSO DE ADS</h3>
+                <p>Aprendizado: HTML, CSS, JavaScript e lógica de programação.</p>
+            </div>
+
+            <div class="caixa">
+                <h3>CURSO DE ENGENHARIA</h3>
+                <p>Disciplinas de Concreto, Geotecnia, Sistemas Prediais, Desenhos Técnicos e entre outras.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Integrações -->
+    <section id="api" class="secao cinza">
+        <h2>Integrações com a BrasilAPI</h2>
+        <p class="texto-centro">Aqui estão três consultas feitas usando o site brasilapi.com.br.</p>
+
+        <div class="grupo-caixas">
+
+            <!-- CEP -->
+            <div class="caixa">
+                <h3>Consulta de CEP</h3>
+                <p>Digite um CEP (apenas números):</p>
+                <input type="text" id="cep" placeholder="Ex: 78550000">
+                <button onclick="buscarCep()">Buscar</button>
+                <div id="resultado-cep" class="resultado"></div>
+            </div>
+
+            <!-- Registro BR -->
+            <div class="caixa">
+                <h3>Consulta Registro BR</h3>
+                <p>Digite um domínio .br:</p>
+                <input type="text" id="dominio" placeholder="Ex: google.com.br">
+                <button onclick="buscarDominio()">Buscar</button>
+                <div id="resultado-dominio" class="resultado"></div>
+            </div>
+
+            <!-- Cambio -->
+            <div class="caixa">
+                <h3>Consulta de Câmbio</h3>
+                <p>Digite a moeda e a data:</p>
+                <input type="text" id="moeda" placeholder="Ex: USD, EUR, GBP">
+                <input type="date" id="data-cambio">
+                <button onclick="buscarCambio()">Buscar</button>
+                <div id="resultado-cambio" class="resultado"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao">
+        <h2>Contato</h2>
+        <p class="texto-centro">Me encontre nas redes sociais:</p>
+
+        <div class="redes">
+            <a href="mailto:letyeri.diel@unemat.br">E-mail</a>
+            <a href="https://github.com/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Desenvolvido por: Letyeri Diel</p>
+        <p>FASIPE - 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

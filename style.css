@@ -1,0 +1,229 @@
+/* Reset basico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Menu */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    border-bottom: 3px solid #3498db;
+}
+
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 20px;
+    background-color: #3498db;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+header ul li a:hover {
+    background-color: #3498db;
+}
+
+/* Apresentacao */
+.inicio {
+    background-color: #34495e;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.caixa-apresentacao {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.caixa-apresentacao h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.caixa-apresentacao p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-color: #2980b9;
+}
+
+/* Secoes */
+.secao {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.secao h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.cinza {
+    background-color: #ecf0f1;
+    max-width: 100%;
+}
+
+.cinza > * {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.texto-centro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Caixas */
+.grupo-caixas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.caixa {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.caixa h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.caixa p {
+    margin-bottom: 10px;
+}
+
+/* Inputs e botoes da API */
+.caixa input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.caixa button {
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.caixa button:hover {
+    background-color: #2980b9;
+}
+
+.resultado {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    min-height: 30px;
+    font-size: 14px;
+}
+
+/* Redes sociais */
+.redes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.redes a {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.redes a:hover {
+    background-color: #34495e;
+}
+
+/* Rodape */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header > div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .caixa-apresentacao h1 {
+        font-size: 28px;
+    }
+
+    .caixa {
+        width: 100%;
+    }
+}
